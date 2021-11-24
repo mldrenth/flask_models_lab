@@ -1,0 +1,22 @@
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <head>
+        <title>{{ title }} - My Order App</title>
+    </head>
+    <body>
+        <h1>All Orders</h1>
+        <div>
+            <p>Name -- Date -- Quantity -- Pizza Name</p>
+        </div>
+        {% for order in orders  %}
+        <div>
+            <p>
+                {{ order.customer_name }} -- {{ order.order_date }} -- {{ order.quantity }} -- {{ order.pizza_name }} -- <a href="/orders/{{ orders.index(order) }}"> View Order Details</a>
+            </p>
+           
+        </div>
+            
+        {% endfor %}
+    </body>
+</html>

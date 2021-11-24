@@ -1,0 +1,16 @@
+h1 {
+    color: dodgerblue;
+    text-align: center;
+}
+body {
+    background-color: lightsteelblue
+}
+
+a {
+    background-color: dodgerblue;
+    padding: 5px;
+    border-radius: 2px;
+}
+p {
+    text-align: center;
+}

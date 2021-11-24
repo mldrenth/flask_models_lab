@@ -1,0 +1,16 @@
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <head>
+        <title>{{ title }} - My Order App</title>
+    </head>
+    <body>
+        <h1>Order Number {{ index }}</h1>
+        <div>
+             <p>{{ order.customer_name }}</p>
+             <p>{{ order.order_date}}</p>
+             <p>{{ order.quantity}}</p>
+             <p>{{ order.pizza_name}}</p>
+        </div>
+    </body>
+</html>
